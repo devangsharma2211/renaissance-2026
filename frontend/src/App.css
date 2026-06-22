@@ -1,0 +1,102 @@
+@import "tailwindcss";
+/* ===========================
+   GLOBAL RESET
+   =========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* DELETE THESE THREE LINES */
+
+/* ADD THIS INSTEAD */
+/* ===========================
+   ROOT & BODY FIX
+   =========================== */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  /* overflow-x: hidden;  */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================
+   ROOT APP CONTAINER
+   =========================== */
+#root {
+  width: 100%;
+  /* min-height: 100vh; */
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; double safety */
+}
+
+/* ===========================
+   LOGO ANIMATIONS (SAFE)
+   =========================== */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter, transform;
+  transition: filter 300ms ease;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+/* body{
+  overflow-x: hidden;
+  overflow-y: auto;
+} */
+/* ===========================
+   CONTENT ELEMENTS
+   =========================== */
+.card {
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* ===========================
+   PARTICLE / POP ANIMATION
+   =========================== */
+@keyframes popRandom {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(
+      calc(-50% + var(--x)),
+      calc(-50% + var(--y))
+    ) scale(1.4);
+  }
+}

@@ -1,0 +1,144 @@
+.footer-container {
+  position: relative;
+  color: #f5ede3;
+  overflow: hidden;
+  padding: 64px 32px;
+  z-index: 20;
+}
+
+.grain-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' result='noise' /%3E%3C/filter%3E%3Crect width='400' height='400' fill='white' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+.footer-content {
+  position: relative;
+  z-index: 10;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+  .main-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.logo-group {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.logo-box {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f5ede3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a0609;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-family: serif;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: white !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+.nav-links {
+  display: flex;
+  
+
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.nav-item {
+  display: block;
+  color: white !important;
+  text-decoration: none;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+.text-fade {
+  color: rgba(255, 255, 255, 0.6) !important; /* Slightly dimmed for effect */
+}
+.nav-item:hover {
+  opacity: 0.6;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-card {
+  text-align: right;
+  margin-bottom: 24px;
+}
+.text-bright {
+  color: white !important; /* Fully bright white */
+}
+.contact-phone {
+  color: #d4846f;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.social-footer {
+  border-top: 1px solid rgba(90, 26, 31, 0.5);
+  padding-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 32px;
+}
+
+.social-icon {
+  font-size: 3rem;
+  color: #f5ede3;
+  transition: color 0.3s ease;
+}
+
+.instagram:hover { color: #E1306C; }
+.linkedin:hover { color: #0A66C2; }
+.globe:hover { color: #4A90E2; }
+/* 4. Force specific overrides for the wrapper */
+.nav-section h3,
+.nav-section a,
+.nav-section span {
+  color: white !important;
+}
+@media (max-width: 768px) {
+    .nav-item .text-bright, 
+    .nav-item .text-fade {
+        font-size: 0.9rem; /* Size for mobile */
+    }
+}

@@ -1,0 +1,374 @@
+
+/* Futuristic Loader */
+.futuristic-preloader-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(2,6,23,0.85), rgba(16,24,39,0.95));
+  z-index: 99999;
+  flex-direction: column;
+}
+.futuristic-preloader-container .cube {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  transform: rotate(45deg);
+  animation: cubeFloat 1.6s infinite ease-in-out;
+}
+.futuristic-preloader-container .glowing-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(79,70,229,0.95);
+  box-shadow: 0 6px 18px rgba(79,70,229,0.35);
+  position: absolute;
+}
+.futuristic-preloader-container .loading-text {
+  margin-top: 18px;
+  color: #c7d2fe;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+@keyframes cubeFloat {
+  0% { transform: rotate(0deg) translateY(0); }
+  50% { transform: rotate(10deg) translateY(-8px); }
+  100% { transform: rotate(0deg) translateY(0); }
+}
+
+.main-wrapper {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('/src/page2/teacher/homeBg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-size: cover;
+}
+
+.main-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0,0,0,0.3);
+}
+
+
+.scrollable-container {
+  position: relative;
+  z-index: 5;
+  max-width: 1200px;
+  margin: 90px auto 0 auto;
+  padding: 0 2rem 2rem;
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+.header {
+  flex-shrink: 0;
+  margin-bottom: 0.6rem;
+  position: relative;
+  z-index: 50; /* MUST be above table */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 6px rgba(255,255,255,0.35);
+}
+
+.actions {
+  width: 100%;
+  position: relative;
+  z-index: 80; /* dropdown anchor */
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.button-group::-webkit-scrollbar {
+  display: none;
+}
+
+.glass-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+
+.glass-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 12px rgba(255,255,255,0.25);
+}
+
+.glass-input {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.glass-input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.relative {
+  position: relative;
+}
+
+/* Unique class for Dashboard Portals to avoid global conflicts */
+.dashboard-portal-menu {
+  position: fixed; 
+  z-index: 9999 !important; 
+  background: #1f2937;
+  backdrop-filter: blur(12px);
+  border: 1px solid #4b5563;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+  padding: 6px;
+  display: flex;        
+  flex-direction: column;
+  min-width: 180px;
+  animation: dropdownFade 0.18s ease-out;
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  text-align: left;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+@keyframes dropdownFade {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.tableWrapper {
+  flex: 1;
+  min-height: 0;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 10;
+}
+
+/* Hide scrollbar */
+.tableWrapper {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.tableWrapper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.th {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  background: rgba(208,184,0,0.95);
+  padding: 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.9);
+}
+
+.td {
+  padding: 1rem;
+  color: rgba(255,255,255,0.85);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.table tbody tr:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #1f2937;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 500px;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+}
+
+/* Confirm / Cancel Buttons */
+.confirmButton {
+  background: #10b981; /* green by default */
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background: transparent;
+  color: #cbd5e1;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  cursor: pointer;
+}
+
+/* Explicit color variants */
+.btn-green { background: #10b981 !important; }
+.btn-orange { background: #f97316 !important; }
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .glass-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9rem;
+  }
+
+/* Responsive Styles for Mobile Devices */
+
+@media (max-width: 768px) {
+
+  /* ---- Page container ---- */
+  .scrollable-container {
+    margin: 90px auto 0 auto;
+    padding: 0 1rem 1rem;
+    height: calc(100vh - 90px);
+  }
+
+  /* ---- Header ---- */
+  .title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  /* ---- Action buttons row ---- */
+  .button-group {
+    gap: 8px;
+    padding-bottom: 6px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .glass-btn {
+    font-size: 0.85rem;
+    padding: 0.55rem 0.8rem;
+  }
+
+  /* ---- TABLE FIX ---- */
+  .tableWrapper {
+    overflow-x: auto;            
+    overflow-y: auto;
+  }
+
+  .table {
+    min-width: 720px;            
+  }
+
+  .th,
+  .td {
+    padding: 0.7rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  
+  .td button.cancelButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 70px;
+    font-size: 0.75rem;
+    padding: 0.45rem 0.6rem;
+    white-space: nowrap;
+  }
+
+  /* ---- Modals ---- */
+  .modal {
+    width: 92%;
+    padding: 1.4rem;
+  }
+}
+
+/* Extra safety for very small phones */
+@media (max-width: 480px) {
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .glass-btn {
+    font-size: 0.8rem;
+  }
+
+  .table {
+    min-width: 760px;  /* ensures Delete column never collapses */
+  }
+}
+
+
+

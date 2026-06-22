@@ -1,0 +1,243 @@
+.celebs-wrapper {
+  width: 100%;
+  /* Ensure it takes at least full screen height */
+  min-height: 100vh;
+  min-height: 100svh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  overflow: hidden; 
+}
+
+/* 1. NEW CLASS: Replaces the inline style from JSX */
+.celebs-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Default desktop height */
+  height: 100svh;
+  margin: 0 auto;
+  overflow: hidden;
+  user-select: none;
+  background-color: transparent;
+}
+
+/* FIX: Ensure background stretches to show everything */
+.celebs-bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* Covers screen without stretching */
+  object-position: center center; /* Centers the image on mobile */
+  z-index: -1;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+  .celebs-wrapper {
+    height: auto;
+    
+  }
+  
+  .celebs-wrapper > div {
+    width: 100% !important;
+  }
+}
+/* --- Mobile Layout (Max-width: 768px) --- */
+/* =========================================
+   MOBILE RESPONSIVE LAYOUT (Max-width: 768px)
+   ========================================= */
+@media (max-width: 768px) {
+
+  /* 1. CONTAINER & BACKGROUND */
+  .celebs-container {
+    height: 100vh !important;
+    min-height: 600px;
+  }
+  .celebs-bg {
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    
+  }
+
+  /* 2. VINYL TRIANGLE (BIGGER NOW) */
+  .vinyl-container {
+    bottom: 12% !important;
+    width: 100%;
+    height: 350px; 
+    gap: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 50 !important;
+  }
+  
+  .vinyl-item {
+    /* INCREASED SIZE from 0.55 to 0.75 */
+    zoom: 0.75; 
+    margin: 0 !important;
+    position: relative !important;
+    transition: all 0.3s ease;
+  }
+
+  /* Triangle Peak (Center) */
+  .vinyl-item:nth-child(2) {
+    position: absolute !important;
+    top: -20px !important; /* Adjusted for larger size */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 60 !important;
+  }
+
+  /* Left Base */
+  .vinyl-item:nth-child(1) {
+    position: absolute !important;
+    top: 150px !important;
+    left: 50% !important;
+    /* Pushed further left to accommodate bigger size */
+    transform: translateX(-130%) rotate(-10deg) !important; 
+    z-index: 55 !important;
+  }
+
+  /* Right Base */
+  .vinyl-item:nth-child(3) {
+    position: absolute !important;
+    top: 150px !important;
+    left: 50% !important;
+    /* Pushed further right to accommodate bigger size */
+    transform: translateX(30%) rotate(10deg) !important; 
+    z-index: 55 !important;
+  }
+
+  /* 3. CASSETTES (Now Floating!) */
+  /* We define custom animations below to include scale/rotation + floating */
+  .cassette-tapes {
+    top: 18% !important;
+    left: -10px !important;
+    /* Overriding the inline animation with our mobile-safe one */
+    animation: float-mobile-left 4s ease-in-out infinite !important;
+    z-index: 40 !important;
+    transform-origin: center;
+  }
+  
+  .cassette-tapes2 {
+    top: 22% !important;
+    right: -10px !important;
+    animation: float-mobile-right 5s ease-in-out infinite 1s !important;
+    z-index: 40 !important;
+    transform-origin: center;
+  }
+
+  /* 4. SOUND WAVE VISUALIZER */
+  /* Moved UP to be near cassettes */
+  .visualizer-container {
+    top: 22% !important; /* Aligned with cassettes */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 60% !important; /* More compact to fit between cassettes */
+    justify-content: center !important;
+    gap: 3px !important;
+    z-index: 30 !important;
+  }
+
+  /* 5. OTHER ELEMENTS */
+  .disco-ball-wrapper {
+    top: 8% !important;
+    transform: translateX(-50%) scale(0.5) !important;
+  }
+
+  div[style*="rotate(-2deg)"] {
+    transform: rotate(0deg) scale(0.65) !important;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .celebs-container {
+    height: 100svh !important;
+    min-height: 520px;
+  }
+
+  .vinyl-container {
+    bottom: 6% !important;
+    height: 320px;
+  }
+
+  .vinyl-item {
+    zoom: 0.6;
+  }
+
+  .vinyl-item:nth-child(2) {
+    top: -18px !important;
+  }
+
+  .vinyl-item:nth-child(1) {
+    top: 170px !important;
+    transform: translateX(-150%) rotate(-10deg) !important;
+  }
+
+  .vinyl-item:nth-child(3) {
+    top: 170px !important;
+    transform: translateX(50%) rotate(10deg) !important;
+  }
+
+  .visualizer-container {
+    top: 18% !important;
+    width: 70% !important;
+  }
+
+  .cassette-tapes {
+    top: 14% !important;
+    left: -6px !important;
+  }
+
+  .cassette-tapes2 {
+    top: 16% !important;
+    right: -6px !important;
+  }
+
+  .disco-ball-wrapper {
+    top: 4% !important;
+    transform: translateX(-50%) scale(0.45) !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .vinyl-container {
+    bottom: 5% !important;
+    height: 300px;
+  }
+
+  .vinyl-item {
+    zoom: 0.52;
+  }
+
+  .vinyl-item:nth-child(2) {
+    top: -20px !important;
+  }
+
+  .vinyl-item:nth-child(1) {
+    top: 175px !important;
+    transform: translateX(-150%) rotate(-10deg) !important;
+  }
+
+  .vinyl-item:nth-child(3) {
+    top: 175px !important;
+    transform: translateX(55%) rotate(10deg) !important;
+  }
+}
+
+/* --- NEW ANIMATIONS FOR MOBILE FLOATING --- */
+/* These combine the scale/rotation AND the float movement */
+@keyframes float-mobile-left {
+  0%, 100% { transform: scale(0.7) rotate(-15deg) translateY(0); }
+  50% { transform: scale(0.7) rotate(-15deg) translateY(-15px); }
+}
+
+@keyframes float-mobile-right {
+  0%, 100% { transform: scale(0.7) rotate(15deg) translateY(0); }
+  50% { transform: scale(0.7) rotate(15deg) translateY(-15px); }
+}

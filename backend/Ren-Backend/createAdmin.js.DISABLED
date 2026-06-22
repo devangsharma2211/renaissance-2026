@@ -1,0 +1,47 @@
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import bcrypt from "bcrypt";
+import Teacher from "./models/Teacher.js"; 
+import path from "path";
+import { fileURLToPath } from "url";
+
+// Load environment variables
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.join(__dirname, '.env') });
+
+const createAdmin = async () => {
+  try {
+    // 1. Connect to MongoDB
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("✅ Connected to MongoDB");
+
+    // 2. Check if admin already exists
+    const adminExists = await Teacher.findOne({ email: "admin@ren.com" });
+    if (adminExists) {
+      console.log("⚠️ Admin already exists!");
+      process.exit();
+    }
+
+    // 3. Create the SuperAdmin
+    const hashedPassword = await bcrypt.hash("admin123", 10); // Change "admin123" to your desired password
+    
+    const adminUser = new Teacher({
+      name: "Main SuperAdmin",
+      email: "admin@ren.com",
+      password: hashedPassword,
+      role: "superadmin",
+      branch: null
+    });
+
+    await adminUser.save();
+    console.log("Superadmin created successfully!");
+
+  } catch (error) {
+    console.error("Error creating admin:", error);
+  } finally {
+    mongoose.connection.close();
+  }
+};
+
+createAdmin();
