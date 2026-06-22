@@ -1,0 +1,551 @@
+[
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66a9f6"
+                },
+        "name":  "Gully Cricket",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66a9f7"
+                },
+        "name":  "Half Court Basketball (3V3)",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66a9f8"
+                },
+        "name":  "Beg Borrow Steal",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66a9f9"
+                },
+        "name":  "Treasure Hunt",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66a9fa"
+                },
+        "name":  "Lan Gaming",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66a9fb"
+                },
+        "name":  "IPL Auction",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66a9fc"
+                },
+        "name":  "Sac Race",
+        "category":  "Splash ",
+        "Paid":  false,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66a9fd"
+                },
+        "name":  "Game of Cinema",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66a9fe"
+                },
+        "name":  "Relay Race",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66a9ff"
+                },
+        "name":  "Tug of war",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa00"
+                },
+        "name":  "Arm wrestling ",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa01"
+                },
+        "name":  "Chess",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa02"
+                },
+        "name":  "3 leg race",
+        "category":  "Splash ",
+        "Paid":  true,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa03"
+                },
+        "name":  "Sarega (Prelims)",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa05"
+                },
+        "name":  "Masterchef Challenge",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa06"
+                },
+        "name":  "RapZap (Prelims)",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa07"
+                },
+        "name":  "Rockathon",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa09"
+                },
+        "name":  "DJ War",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa0b"
+                },
+        "name":  "Beat The Beats",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa0c"
+                },
+        "name":  "Footloose",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa0d"
+                },
+        "name":  "Hunar",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa0e"
+                },
+        "name":  "Battle Mania",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa0f"
+                },
+        "name":  "Adaa",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa11"
+                },
+        "name":  "Navras",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa12"
+                },
+        "name":  "Kavya",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa13"
+                },
+        "name":  "Shor Bazzar",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67aeb8fdb9b8cd384c66aa14"
+                },
+        "name":  "Bootstrapping",
+        "category":  "Cultural ",
+        "Paid":  true,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cf0"
+                },
+        "name":  "Hardware Bites",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cf1"
+                },
+        "name":  "Formula Zero",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cf2"
+                },
+        "name":  "Tech Probe",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cf3"
+                },
+        "name":  "Dexterity",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cf4"
+                },
+        "name":  "3D Mania",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cf5"
+                },
+        "name":  "Campus Kart Clash",
+        "category":  "Technical",
+        "Paid":  true,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cf6"
+                },
+        "name":  "CAD Darshan",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cf7"
+                },
+        "name":  "Screen Flex",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cf8"
+                },
+        "name":  "Tech Hunt",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cf9"
+                },
+        "name":  "Brain Quest",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cfa"
+                },
+        "name":  "Robo Soccer",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cfb"
+                },
+        "name":  "Programmer\u0027s Playground",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cfc"
+                },
+        "name":  "Technical Poster Making Competition",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cfe"
+                },
+        "name":  "Puzzle Mania",
+        "category":  "Technical",
+        "Paid":  true,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64cff"
+                },
+        "name":  "JECRC Technoads",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64d00"
+                },
+        "name":  "Technocrazy",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64d01"
+                },
+        "name":  "Best Out Of Waste",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64d02"
+                },
+        "name":  "Resin O\u0027clock",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64d03"
+                },
+        "name":  "Game of Drones",
+        "category":  "Technical",
+        "Paid":  true,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64d04"
+                },
+        "name":  "Situational Que",
+        "category":  "Technical",
+        "Paid":  true,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64d05"
+                },
+        "name":  "Robo tug of war",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64d06"
+                },
+        "name":  "Electroquizzer",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64d07"
+                },
+        "name":  "Tech Spectrum",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64d08"
+                },
+        "name":  "Virtual Vision",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64d09"
+                },
+        "name":  "Flick (Short Film)",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b035e108cbee12b8d64d0a"
+                },
+        "name":  "Subito",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b0cc7f1334b19f9fe22c67"
+                },
+        "name":  "Knowledge Knockout",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b0cc7f1334b19f9fe22c68"
+                },
+        "name":  "Blind Code",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  1
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b0cc7f1334b19f9fe22c69"
+                },
+        "name":  "Code Olympics",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b0cc7f1334b19f9fe22c6a"
+                },
+        "name":  "DSA Battle Ground",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b0cc7f1334b19f9fe22c6b"
+                },
+        "name":  "Slowest Roller Coaster with Paper",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b0cc7f1334b19f9fe22c6c"
+                },
+        "name":  "Web Crafters",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  2
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b0cc7f1334b19f9fe22c6d"
+                },
+        "name":  "Creative Pixels",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    },
+    {
+        "_id":  {
+                    "$oid":  "67b0cc7f1334b19f9fe22c6e"
+                },
+        "name":  "Drishyam: The Poster Presentation",
+        "category":  "Technical",
+        "Paid":  false,
+        "day":  3
+    }
+]

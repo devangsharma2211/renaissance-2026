@@ -1,0 +1,43 @@
+
+.main-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.hero-section {
+  /* 1. Define the height (Make it full screen or taller) */
+  height: 100%; 
+  width: 100%;
+  
+  /* 2. THE MAGIC: Scroll up first, then stick */
+  position: sticky;
+  
+  /* Change this value to control when it stops! 
+     -0px   = Stops immediately (no scroll)
+     -20vh  = Scrolls 20% then stops
+     -100vh = Scrolls completely away (normal behavior) 
+  */
+  top: -40vh; 
+  
+  /* 3. Keep it behind the upcoming content */
+  z-index: 0;
+  
+  /* overflow: hidden; */
+}
+
+.hero-content {
+  width: 100%;
+  /* margin-bottom: 500px; */
+  /* height: 180vh; */
+}
+
+.hero-image {
+  width: 100%;
+  /* height: 30vh; */
+  object-fit: cover;
+}
+
+.about-section, .sponsers-container, .footer-wrapper {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px; 
+}

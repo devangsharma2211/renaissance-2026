@@ -1,0 +1,97 @@
+/* ================= GLOBAL WRAPPERS ================= */
+:root {
+  --ren-gold: #ffb800;
+  --stamp-beige: #f5f5f5;
+}
+
+/* .main-wrapper {
+  top: calc(-18px + 1vw); 
+  width: 100%;
+  position: relative;
+  margin-bottom: 0; 
+}
+
+.hero-section {
+  width: 100%;
+  height: 101vh; 
+  position: relative;
+  margin: 0;
+  padding: 0;
+} */
+
+.main-wrapper {
+  position: relative;
+  top: calc(-21px + 1vw); 
+  background: transparent !important;
+  width: 100%;
+   margin-bottom: 0; 
+}
+
+
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+  height: 101.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/* ================= HERO IMAGE ================= */
+.hero-image {
+  width: 100%;
+  height: 100%; 
+  display: block;
+  position: relative;
+  
+  /* CHANGED TO 'cover': 
+     1. It preserves the image aspect ratio (no more squashing/stretching).
+     2. It ensures the image covers the entire screen area.
+     3. It intelligently crops the edges if the screen is wider/taller than the image.
+  */
+  object-fit: fit-cover; 
+  
+  /* Keeps the center of the image visible. 
+     Change to 'center top' if the important part (like a face) is at the top. */
+  object-position: center;
+}
+
+/* ================= RESPONSIVE / LAPTOPS & MOBILE ================= */
+
+/* Fix for standard laptops (1366x768 to 1440x900) */
+@media screen and (min-width: 1024px) and (max-height: 800px) {
+  .hero-section {
+    min-height: 600px; /* Prevents it from getting too short on small laptops */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 850px) {
+  .hero-section {
+    height: 100vh !important;
+  }
+  
+  .hero-content {
+    height: 100% !important;
+  }
+
+  .hero-image {
+    height: 100% !important;
+    width: 100%;
+    object-fit: cover; /* Maintain cover on mobile */
+    object-position: center;
+  }
+
+  .main-wrapper {
+    top: 0 !important;
+    margin-bottom: 0 !important;
+    height: auto;
+  }
+}
