@@ -1378,6 +1378,6 @@ VITE_API_BASE=https://ren-old.onrender.com/api
 ---
 
 **Project Built by:** Team Renaissance, JECRC Foundation  
-**Tech Lead (Backend):** Vanshika  
+**Tech Head:** Devang Sharma  
 **Stack:** Node.js + Express + MongoDB (Backend) | React + Vite + Tailwind (Frontend)  
 **Deployment:** Render (Backend) + Netlify (Frontend) + MongoDB Atlas (Database) + Cloudflare (CDN)
